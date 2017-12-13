@@ -1,0 +1,181 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "Direction",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "forward",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "backward",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "left",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "right",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": [
+          "how do I use the car",
+          "how do i use the iot car"
+        ]
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "DoInstruction",
+        "samples": [
+          "go {directionOne} for {secondsOne} point {decimalOne} seconds",
+          "drive {directionOne} for {secondsOne} point {decimalOne} seconds"
+        ],
+        "slots": [
+          {
+            "name": "directionOne",
+            "type": "Direction"
+          },
+          {
+            "name": "secondsOne",
+            "type": "AMAZON.NUMBER"
+          },
+          {
+            "name": "decimalOne",
+            "type": "AMAZON.NUMBER"
+          },
+          {
+            "name": "directionTwo",
+            "type": "Direction"
+          },
+          {
+            "name": "secondsTwo",
+            "type": "AMAZON.NUMBER"
+          },
+          {
+            "name": "decimalTwo",
+            "type": "AMAZON.NUMBER"
+          },
+          {
+            "name": "directionThree",
+            "type": "Direction"
+          },
+          {
+            "name": "secondsThree",
+            "type": "AMAZON.NUMBER"
+          },
+          {
+            "name": "decimalThree",
+            "type": "AMAZON.NUMBER"
+          },
+          {
+            "name": "directionFour",
+            "type": "Direction"
+          },
+          {
+            "name": "secondsFour",
+            "type": "AMAZON.NUMBER"
+          },
+          {
+            "name": "decimalFour",
+            "type": "AMAZON.NUMBER"
+          }
+        ]
+      },
+      {
+        "name": "EchoIPIntent",
+        "samples": [
+          "what i p is my car",
+          "what is my car's i p",
+          "what is the i p of my car",
+          "echo the i p of my vehicle"
+        ],
+        "slots": []
+      },
+      {
+        "name": "EscapeBlackLine",
+        "samples": [
+          "stop following the black line",
+          "escape the black line",
+          "leave the black line",
+          "kick it bro",
+          "run away from the black line"
+        ],
+        "slots": []
+      },
+      {
+        "name": "FindBlackLine",
+        "samples": [
+          "find the black line",
+          "search for the black line",
+          "follow the black line",
+          "black line follow",
+          "start following the black line"
+        ],
+        "slots": []
+      },
+      {
+        "name": "GetAnIPIntent",
+        "samples": [
+          "Connect to a new IP",
+          "connect to a new i p",
+          "connect to {ipOne} dot {ipTwo} dot {ipThree} dot {ipFour}"
+        ],
+        "slots": [
+          {
+            "name": "ipOne",
+            "type": "AMAZON.NUMBER"
+          },
+          {
+            "name": "ipTwo",
+            "type": "AMAZON.NUMBER"
+          },
+          {
+            "name": "ipThree",
+            "type": "AMAZON.NUMBER"
+          },
+          {
+            "name": "ipFour",
+            "type": "AMAZON.NUMBER"
+          }
+        ]
+      },
+      {
+        "name": "MoveIntent",
+        "samples": [
+          "move the car",
+          "move car",
+          "move"
+        ],
+        "slots": []
+      }
+    ],
+    "invocationName": "my vehicle"
+  }
+}
